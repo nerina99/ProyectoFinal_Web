@@ -1,0 +1,95 @@
+/*
+ESTILO GENERAL
+*/
+
+
+body {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+/*
+----------------------CARROUSEL-----------------------------
+*/
+/*
+Divs
+*/
+.Carrousel {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    width: 100%;
+    background-color: beige;
+
+}
+
+.imagenes {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+
+}
+
+.flecha {
+
+    background-color: blueviolet;
+    margin: 2vh;
+}
+
+.botones {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    
+}
+
+/*
+Imagenes
+*/
+.botonFlecha {
+
+    height: 10vh;
+    margin: 0;
+    padding: 0;
+
+}
+
+.item {
+
+    width: 100vh;
+
+}
+/*
+puntos - botones
+*/
+.punto {
+    font-size: 30vh;
+    color: black;
+    margin:0;
+    padding: 0;
+    transform: translateY(-120px);
+
+}
+
+.punto .bold {
+    font-size: 45vh;
+    color: chocolate;
+}
+
+
+/*
+---------------------- FIN CARROUSEL-----------------------------
+*/
