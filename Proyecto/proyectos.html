@@ -12,7 +12,7 @@
 
         <!-- Boton izquierda -->
 
-        <div class="flecha">
+        <div class="flecha" id="izquierda">
 
             <img src="../Imagenes/Carrousel/izquierda.png" alt="izquierda" class="botonFlecha">
 
@@ -22,13 +22,16 @@
 
         <div class="imagenes">
 
-            <img src="../Imagenes/Proyecto_Ian_1/Portafolio_1.png" alt="item" class="item">
+            <div id="imagenes">
 
+                <img src="../Imagenes/Proyecto_Ian_1/Portafolio_1.png" alt="item" class="item" loading="lazy">
+
+            </div>
         </div>
 
         <!-- Boton derecha -->
 
-        <div class="flecha">
+        <div class="flecha" id="derecha">
 
             <img src="../Imagenes/Carrousel/derecha.png" alt="derecha" class="botonFlecha">
 
@@ -39,11 +42,11 @@
 
      </div>
 
-    <div class="botones">
-
-        <p class="punto">.</p>
+    <div class="punto" id="punto">
 
     </div>
     <!-- Fin Carrousel -->
+
+    <script src="../JS/script.js"></script>
 </body>
 </html>

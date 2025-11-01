@@ -27,7 +27,6 @@ Divs
     justify-content: center;
     height: 75vh;
     width: 100%;
-    background-color: beige;
 
 }
 
@@ -37,22 +36,19 @@ Divs
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: blue;
 
 }
 
 .flecha {
 
-    background-color: blueviolet;
     margin: 2vh;
 }
 
-.botones {
+.punto {
 
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: aqua;
     
 }
 
@@ -75,7 +71,7 @@ Imagenes
 /*
 puntos - botones
 */
-.punto {
+.punto p {
     font-size: 30vh;
     color: black;
     margin:0;
@@ -84,9 +80,12 @@ puntos - botones
 
 }
 
-.punto .bold {
-    font-size: 45vh;
-    color: chocolate;
+.punto .puntoSeleccionado {
+    font-size: 35vh;
+    color: violet;
+    margin:0;
+    padding: 0;
+    transform: translateY(-130px);
 }
 
 
