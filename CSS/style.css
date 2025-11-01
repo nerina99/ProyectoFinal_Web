@@ -42,6 +42,7 @@ Divs
 .flecha {
 
     margin: 2vh;
+    cursor: pointer;
 }
 
 .punto {
@@ -49,6 +50,7 @@ Divs
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: default;
     
 }
 
@@ -77,6 +79,7 @@ puntos - botones
     margin:0;
     padding: 0;
     transform: translateY(-120px);
+    cursor: pointer;
 
 }
 

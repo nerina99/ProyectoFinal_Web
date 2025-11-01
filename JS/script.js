@@ -7,10 +7,19 @@ function item(url, nombre, descripcion) {
     this.descripcion = descripcion;
 }
 
+//Constructor del punto para la posicion
+function seleccionPunto(contador, texto) {
+    this.contador = contador;
+    this.texto = texto;
+}
+
 
 
 //Array del carrousel
 let imagenes = new Array();
+
+//Array del punto Seleccionado
+let puntoPosicion = new Array();
 
 //Se rellena con los items que deseemos
 imagenes.push(new item(
@@ -41,7 +50,7 @@ izquierda.addEventListener('click', function() {
         posicion = imagenes.length - 1;
     }
 
-    imagen.innerHTML = '<img src="${imagenes[posicion].url}" alt="item" class="item" loading="lazy">';
+    imagen.innerHTML = `<img src="${imagenes[posicion].url}" alt="item" class="item" loading="lazy">`;
 
     posicionCarrousel();
 
@@ -64,21 +73,37 @@ derecha.addEventListener('click', function() {
 function posicionCarrousel() {
 
     puntos.innerHTML = "";
+    let contador = 0;
 
     for (let i = 0 ; i  < imagenes.length ; i++) {
         
 
 
         if (i == posicion) {
-            puntos.innerHTML += `<p class="puntoSeleccionado">.</p>`;
+            puntoPosicion.push(
+                new seleccionPunto(
+                    contador,
+                    puntos.innerHTML += `<p class="puntoSeleccionado">.</p>`
+                )
+            );
+            
         }
         else {
-            puntos.innerHTML += `<p>.</p>`;
+            puntoPosicion.push(
+                new seleccionPunto(
+                    contador,
+                    puntos.innerHTML += `<p>.</p>`
+                )
+            );            
         }
+
+        contador++;
         
     }
 
 }
+
+
 
 
 //FIN CARROUSEL -----------------------------------------------------------
