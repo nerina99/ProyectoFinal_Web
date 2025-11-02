@@ -7,14 +7,6 @@ function item(url, nombre, descripcion) {
     this.descripcion = descripcion;
 }
 
-//Constructor del punto para la posicion
-function seleccionPunto(contador, texto) {
-    this.contador = contador;
-    this.texto = texto;
-}
-
-
-
 //Array del carrousel
 let imagenes = new Array();
 
@@ -39,7 +31,7 @@ imagenes.push(new item(
 
 imagenes.push(new item(
     "../Imagenes/Proyecto_Ian_1/cod_1.png",
-    "Código de trabajo Java",
+    "Código de trabajo",
     " ... "));
 
 let izquierda = document.getElementById('izquierda');
@@ -49,7 +41,15 @@ let puntos = document.getElementById('punto');
 //let texto = document.getElementById();
 let posicion = 0;
 
+
 posicionCarrousel();
+
+function cambiarImagen(posicion) {
+
+    imagen.innerHTML = `<img src="${imagenes[posicion].url}" alt="item" class="item" loading="lazy">`;
+
+}
+
 
 
 izquierda.addEventListener('click', function() {
@@ -60,7 +60,7 @@ izquierda.addEventListener('click', function() {
         posicion = imagenes.length - 1;
     }
 
-    imagen.innerHTML = `<img src="${imagenes[posicion].url}" alt="item" class="item" loading="lazy">`;
+    cambiarImagen(posicion);
 
     posicionCarrousel();
 
@@ -74,7 +74,7 @@ derecha.addEventListener('click', function() {
         posicion = 0;
     }
 
-    imagen.innerHTML = `<img src="${imagenes[posicion].url}" alt="item" class="item" loading="lazy">`;
+    cambiarImagen(posicion);
 
     posicionCarrousel();
 
@@ -83,31 +83,17 @@ derecha.addEventListener('click', function() {
 function posicionCarrousel() {
 
     puntos.innerHTML = "";
-    let contador = 0;
 
     for (let i = 0 ; i  < imagenes.length ; i++) {
         
-
-
         if (i == posicion) {
-            puntoPosicion.push(
-                new seleccionPunto(
-                    contador,
-                    puntos.innerHTML += `<p class="puntoSeleccionado">.</p>`
-                )
-            );
+            puntos.innerHTML += `<p class="puntoSeleccionado">.</p>`
             
         }
         else {
-            puntoPosicion.push(
-                new seleccionPunto(
-                    contador,
-                    puntos.innerHTML += `<p>.</p>`
-                )
-            );            
-        }
 
-        contador++;
+            puntos.innerHTML += `<p>.</p>`         
+        }
         
     }
 
