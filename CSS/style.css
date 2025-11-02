@@ -2,6 +2,17 @@
 ESTILO GENERAL
 */
 
+:root {
+  --color-Primario: #F08787;
+  --color-Secundario: #FFC7A7;
+  --color-Terciario: #FEE2AD;
+  --color-Cuaternario: #F8FAB4;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
 
 /* --- Encabezado --- */
 .encabezado {
@@ -131,4 +142,18 @@ puntos - botones
 .contenedor-texto {
   text-align: center;
 }
+
+/*--------------------FIN TEXTO PRESENTACION-------------------------*/
+
+/*--------------------ENCABEZADO-------------------------*/
+
+.encabezado {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  background-color: var(--color-Primario);
+  border-radius: 0 0 1vh 1vh;
+}
+
+
 

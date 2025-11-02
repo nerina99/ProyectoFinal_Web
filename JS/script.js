@@ -32,6 +32,16 @@ imagenes.push(new item(
     "Portafolio de Nerina Programacion",
     " ... "));
 
+imagenes.push(new item(
+    "../Imagenes/Proyecto_Nerina_1/Fidelidad Alta.png",
+    "Boceto de los trabajos realizados",
+    " ... "));
+
+imagenes.push(new item(
+    "../Imagenes/Proyecto_Ian_1/cod_1.png",
+    "Código de trabajo Java",
+    " ... "));
+
 let izquierda = document.getElementById('izquierda');
 let derecha = document.getElementById('derecha');
 let imagen = document.getElementById('imagenes');
