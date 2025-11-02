@@ -21,6 +21,7 @@ body, html {
   justify-content: space-between; /* separa logo y menú */
   padding: 10px 80px;
   background-color: #fff;
+  margin: 0;
 }
 
 /* --- Logo --- */
@@ -149,11 +150,91 @@ puntos - botones
 
 .encabezado {
   display: flex;
-  align-items: center;
+  align-items:stretch;
   justify-items: center;
   background-color: var(--color-Primario);
   border-radius: 0 0 1vh 1vh;
 }
 
+.encabezado nav {
+  display: flex;
+  align-items: stretch;
+}
+
+.encabezado nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+  justify-content: center;
+}
+
+.encabezado nav ul li {
+  display: flex;
+  align-items: center;
+  padding: 2vh;
+}
+
+.actual {
+  background-color: var(--color-Cuaternario);
+  border-radius: 1vh;
+}
+
+/*-------------------- FIN ENCABEZADO-------------------------*/
+
+/*--------------------CUERPO INDEX-------------------------*/
+
+.secciones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /*background-color: #FEE2AD;*/
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 3vh;
+}
+
+.contenedor-texto {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /*background-color: red;*/
+  margin: 10px;
+}
+
+.contenedor-texto * {
+  margin: 10px;
+  /*background-color: blue;*/
+}
+
+.imagenes-Portafolio img {
+  height: 500px;
+}
+
+
+
+/*--------------------FIN CUERPO INDEX-------------------------*/
+
+/*--------------------FOOTER-------------------------*/
+
+.contacto {
+
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2vh;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  background-color: var(--color-Primario);
+  border-radius: 1vh 1vh 0 0;
+
+
+}
+
+.contacto div img {
+  width: 4vh;
+}
+
+/*--------------------FIN FOOTER-------------------------*/
 
 
