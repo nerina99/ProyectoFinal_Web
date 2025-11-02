@@ -38,6 +38,10 @@ ESTILO GENERAL
   color: #007bff;
 }
 
+h1 {
+
+  text-align: center;
+}
 
 /*
 ----------------------CARROUSEL-----------------------------
@@ -121,3 +125,10 @@ puntos - botones
 /*
 ---------------------- FIN CARROUSEL-----------------------------
 */
+
+/*--------------------TEXTO PRESENTACION-------------------------*/
+
+.contenedor-texto {
+  text-align: center;
+}
+
