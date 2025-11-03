@@ -150,6 +150,7 @@ puntos - botones
 
 .encabezado {
   display: flex;
+  align-items: center;
   align-items:stretch;
   justify-items: center;
   background-color: var(--color-Primario);
@@ -236,5 +237,3 @@ puntos - botones
 }
 
 /*--------------------FIN FOOTER-------------------------*/
-
-
