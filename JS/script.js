@@ -116,7 +116,16 @@ if (document.title === "Contacto") {
 
 const formulario = document.getElementById("formulario");
 
-formulario.addEventListener("submit" , function(event) {
+formulario.addEventListener("reset" , function(evento) {
+
+    const div = document.querySelector('.cuadroDatos');
+
+    if (div) {
+        div.remove();
+    }
+});
+
+formulario.addEventListener("submit" , function(evento) {
 
     const nombreCompleto = document.getElementById("nombreApellido");
     const email = document.getElementById("mail");
@@ -137,53 +146,79 @@ formulario.addEventListener("submit" , function(event) {
 
     if (!nombreER.test(nombreCompleto.value)) {
         valido = false;
-        nombreCompletoError.textContent = "Se permite entre 10 a 50 caracteres";
+        nombreCompletoError.innerHTML = "Se permite entre 10 a 50 caracteres";
     } else {
-        nombreCompletoError.textContent = "";
-        nombreCompleto.setCustomValidity("");
-        
+        nombreCompletoError.innerHTML = "";
     }
 
     if (!emailER.test(email.value)) {
         valido = false;
-        emailError.textContent = "No es correcto el formato de correo";
+        emailError.innerHTML = "No es correcto el formato de correo";
     } else {
-        emailError.textContent = "";
-        email.setCustomValidity("");
+        emailError.innerHTML = "";
     }
 
     if (!telefonoER.test(telefono.value)) {
         valido = false;
-        telefonoError.textContent = "formato solo numerico";
+        telefonoError.innerHTML = "formato solo numerico";
     } else {
-        telefonoError.textContent = "";
-        telefono.setCustomValidity("");
+        telefonoError.innerHTML = "";
     }
 
     if (!mensajeER.test(mensaje.value)) {
         valido = false;
-        mensajeError.textContent = "Se puede colocar entre 10 a 512 caracteres";
+        mensajeError.innerHTML = "Se puede colocar entre 10 a 512 caracteres";
     } else {
-        mensajeError.textContent = "";
-        mensaje.setCustomValidity("");
+        mensajeError.innerHTML = "";
     }
 
     if (!valido) {
-        formulario.reportValidity();
-        event.preventDefault();
+        evento.preventDefault();
+        return null;
     } else {
+        evento.preventDefault();
         const informacion = {
             nombreCompleto: nombreCompleto.value,
             email: email.value,
             telefono: telefono.value,
             mensaje: mensaje.value
-        };
-    }   
-}, true);
+        }; 
+
+        console.log(informacion);
+
+        crearCuadroDatos(informacion);
+
+
+    }
+
+});
+
+function crearCuadroDatos(datos) {
+
+    const div = document.querySelector('.cuadroDatos');
+
+    if (div) {
+        div.remove();
+    }
+
+    const datosIngresados = document.createElement("div");
+    datosIngresados.className = "cuadroDatos";
+    datosIngresados.innerHTML = 
+    `
+    <p><b>DATOS ENVIADOS</b></p>
+    <p><b>Nombre y Apellido:</b> ${datos.nombreCompleto}</p>
+    <p><b>Email:</b> ${datos.email}</p>
+    <p><b>Teléfono:</b> ${datos.telefono}</p>
+    <p><b>Mensaje:</b> ${datos.mensaje}</p>
+    `;
+    document.getElementById("seccionFormulario").appendChild(datosIngresados);
+
+
+}
 
 
 
-
+    
 
 
 
