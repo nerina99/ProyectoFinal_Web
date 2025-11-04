@@ -20,71 +20,53 @@
             <nav>
                 <ul class="menu">
 
-                    <li><a href="#home">Home</a></li>
+                    <li><a href="./index.html">Home</a></li>
                     <li><a href="#proyecto">Proyecto</a></li>
                     <li class="actual"><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
         </div>
-        <!-- CUERPO DE LA PAGINA -->
-        <main class="cuerpo">
 
-            <h1>CONTACTESE CON NOSOTROS</h1>
-            <div class="formularioCentrado">
-                <div class="formulario">
-                    <!--formulario-->
-                    <form id="formulario" novalidate>
-                        <h2>Mis datos:</h2>
-                        <div>
-                            <label for="nombreApellido">Nombre y Apellido:</label>
-                            <br>
-                            <input type="text" name="nombreApellido" id="nombreApellido" required>
-                            <p id="errorNombre" class="errorForm"></p>
-                        </div>
+     <main class="cuerpo">
+  <h1>CONTACTESE CON NOSOTROS</h1>
 
-                        <div>
-                            <label for="mail">Email:</label>
-                            <br>
-                            <input type="text" name="mail" id="mail" required >
-                            <p id="errorEmail" class="errorForm"></p>
-                        </div>
-                        <div>
-                            <label for="telefono">Teléfono:</label>
-                            <br>
-                            <input type="text" name="telefono" id="telefono" required>
-                            <p id="errorTelefono" class="errorForm"></p>
-                        </div>
+  <div class="formularioCentrado">
+    <div class="formulario">
+      <form id="formulario" novalidate>
+        <h2>Mis datos</h2>
 
-                        <div>
-                            <label for="mensaje">Mensaje:</label>
-                            <br>
-                            <textarea name="mensaje" id="mensaje" rows="5" cols="20">
+        <div class="campo">
+          <label for="nombreApellido">Nombre y Apellido:</label>
+          <input type="text" id="nombreApellido" name="nombreApellido" placeholder="Ej: Ian Gómez" required>
+          <p id="errorNombre" class="errorForm" aria-live="polite"></p>
+        </div>
 
-                            </textarea>
-                            <p id="errorMensaje" class="errorForm"></p>
-                        </div>
-                        <div class="botonDIV">
-                            <input type="submit" value="Enviar" class="boton">
-                            <input type="reset" value="Reset" class="boton">
-                        </div>
-                    </form>            
-                    <!--fin formulario-->
-                </div>
-            </div>
-        </main>
+        <div class="campo">
+          <label for="mail">Email:</label>
+          <input type="email" id="mail" name="mail" placeholder="ejemplo@mail.com" required>
+          <p id="errorEmail" class="errorForm" aria-live="polite"></p>
+        </div>
 
-        <!-- FIN DEL CUERPO DE LA PAGINA -->
+        <div class="campo">
+          <label for="telefono">Teléfono:</label>
+          <input type="text" id="telefono" name="telefono" placeholder="Ej: 1123456789" required>
+          <p id="errorTelefono" class="errorForm" aria-live="polite"></p>
+        </div>
 
-            <!-- Sección Contacto -->
-        <section class="contacto" id="Contacto">
-            <h2>Contacto</h2>
-            <br>
-            <div>
+        <div class="campo">
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribí tu mensaje aquí..." required></textarea>
+          <p id="errorMensaje" class="errorForm" aria-live="polite"></p>
+        </div>
 
-            </div>
-
-        </section>
+        <div class="botonDIV">
+          <input type="submit" value="Enviar" class="boton enviar">
+          <input type="reset" value="Reset" class="boton reset">
+        </div>
+      </form>
     </div>
+  </div>
+</main>
 
     <script src="../JS/script.js"></script>
 </body>
