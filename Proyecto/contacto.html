@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+
+</head>
+
+<body>
+
+    <div class="cuerpoCompleto">
+        <!-- Logo y Menu principal--->
+
+        <div class="encabezado">
+            <img src="../Imagenes/Logo.png" alt="Logo del portafolio" class="logo" width="150" height="150">
+            <nav>
+                <ul class="menu">
+
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#proyecto">Proyecto</a></li>
+                    <li class="actual"><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- CUERPO DE LA PAGINA -->
+        <main class="cuerpo">
+
+            <h1>CONTACTESE CON NOSOTROS</h1>
+            <div class="formularioCentrado">
+                <div class="formulario">
+                    <!--formulario-->
+                    <form id="formulario" novalidate>
+                        <h2>Mis datos:</h2>
+                        <div>
+                            <label for="nombreApellido">Nombre y Apellido:</label>
+                            <br>
+                            <input type="text" name="nombreApellido" id="nombreApellido" required>
+                            <p id="errorNombre" class="errorForm"></p>
+                        </div>
+
+                        <div>
+                            <label for="mail">Email:</label>
+                            <br>
+                            <input type="text" name="mail" id="mail" required >
+                            <p id="errorEmail" class="errorForm"></p>
+                        </div>
+                        <div>
+                            <label for="telefono">Teléfono:</label>
+                            <br>
+                            <input type="text" name="telefono" id="telefono" required>
+                            <p id="errorTelefono" class="errorForm"></p>
+                        </div>
+
+                        <div>
+                            <label for="mensaje">Mensaje:</label>
+                            <br>
+                            <textarea name="mensaje" id="mensaje" rows="5" cols="20">
+
+                            </textarea>
+                            <p id="errorMensaje" class="errorForm"></p>
+                        </div>
+                        <div class="botonDIV">
+                            <input type="submit" value="Enviar" class="boton">
+                            <input type="reset" value="Reset" class="boton">
+                        </div>
+                    </form>            
+                    <!--fin formulario-->
+                </div>
+            </div>
+        </main>
+
+        <!-- FIN DEL CUERPO DE LA PAGINA -->
+
+            <!-- Sección Contacto -->
+        <section class="contacto" id="Contacto">
+            <h2>Contacto</h2>
+            <br>
+            <div>
+
+            </div>
+
+        </section>
+    </div>
+
+    <script src="../JS/script.js"></script>
+</body>

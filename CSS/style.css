@@ -14,6 +14,12 @@ body, html {
   padding: 0;
 }
 
+.cuerpoCompleto {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 /* --- Encabezado --- */
 .encabezado {
   display: flex;
@@ -138,6 +144,85 @@ puntos - botones
 ---------------------- FIN CARROUSEL-----------------------------
 */
 
+/*-----------------  FORMULARIO  ---------------------------------*/
+
+.formularioCentrado {
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+
+}
+
+
+.formulario {
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-radius: 10px;
+    border: solid;
+    border-color: var(--color-Primario);
+    border-width: 5px;
+    box-shadow: 5px 10px 0 0 var(--color-Cuaternario);
+    padding: 1vh 7vh;
+    width: 30vh;
+    margin-bottom: 2vh;
+
+
+}
+
+.formulario > form div {
+
+    padding: 1vh 0;
+
+}
+
+.formulario h2
+{
+    color: var(--color-Primario);
+    margin: 0;
+    padding: 0;
+
+}
+
+.formulario > form input, textarea, select {
+
+    border: none;
+    border-bottom: solid;
+    border-bottom-width: 1px;
+    border-color: var(--color-Secundario);
+}
+.formulario > form textarea, select, input[type="date"], input[type="text"]  {
+    width: 100%;
+}
+
+.boton {
+
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-Primario);
+    color: var(--color-Terciario);
+    padding: 0.3vh 1.5vh;
+
+}
+
+.botonDIV {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.errorForm {
+  color: var(--color-Primario);
+  font-size: 2vh;
+}
+
+
+/*-----------------  FIN FORMULARIO  ---------------------------------*/
+
 /*--------------------TEXTO PRESENTACION-------------------------*/
 
 .contenedor-texto {
@@ -194,6 +279,10 @@ puntos - botones
 /*-------------------- FIN ENCABEZADO-------------------------*/
 
 /*--------------------CUERPO INDEX-------------------------*/
+
+.cuerpo {
+  flex: 1;
+}
 
 .secciones {
   display: flex;
