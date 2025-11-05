@@ -107,7 +107,7 @@ if(document.title === "Presentación de Portafolio") {
     });
 
     }
-    
+
     function puntoSeleccionado(evento) {
 
         const textoClase = evento.match(/puntoC-[0-9]/);
@@ -249,3 +249,9 @@ if (document.title === "Contacto") {
 
 
 //---------------------------- FIN FORMULARIO ----------------------------------------
+
+//---------------------------- UTILITARIOS (USO GENERAL) -----------------------------
+
+
+
+//---------------------------- FIN UTILITARIOS  -----------------------------
