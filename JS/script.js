@@ -123,6 +123,7 @@ formulario.addEventListener("reset" , function(evento) {
     if (div) {
         div.remove();
     }
+    
 });
 
 formulario.addEventListener("submit" , function(evento) {
