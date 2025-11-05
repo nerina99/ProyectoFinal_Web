@@ -28,7 +28,7 @@
         </div>
 
      <main class="cuerpo">
-  <h1>CONTACTESE CON NOSOTROS</h1>
+  <h1 style="font-family: 'Courier New', Courier, monospace;">CONTACTESE CON NOSOTROS</h1>
 
   <div class="formularioCentrado" id="seccionFormulario">
     <div class="formulario">
@@ -37,7 +37,7 @@
 
         <div class="campo">
           <label for="nombreApellido">Nombre y Apellido:</label>
-          <input type="text" id="nombreApellido" name="nombreApellido" placeholder="Ej: Ian Gómez" required>
+          <input type="text" id="nombreApellido" name="nombreApellido" minlength="10" maxlength="50" placeholder="Ej: Ian Gómez" required>
           <p id="errorNombre" class="errorForm" aria-live="polite"></p>
         </div>
 
@@ -55,7 +55,7 @@
 
         <div class="campo">
           <label for="mensaje">Mensaje:</label>
-          <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribí tu mensaje aquí..." required></textarea>
+          <textarea id="mensaje" name="mensaje" rows="4" minlength="10" maxlength="512" placeholder="Escribí tu mensaje aquí..." required></textarea>
           <p id="errorMensaje" class="errorForm" aria-live="polite"></p>
         </div>
 
