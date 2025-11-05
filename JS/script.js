@@ -41,6 +41,11 @@ if(document.title === "Presentación de Portafolio") {
     let todosLosPuntos = document.querySelectorAll('[class*=puntoC-]');
     let posicion = 0;
 
+    //Completar textos con la funcion letra por letra
+    let eslogan = document.getElementById("eslogan");
+
+    letraPorLetra("Innovamos con código, aprendimos creando.", 50, eslogan);
+
 
     posicionCarrousel();
 
@@ -170,28 +175,28 @@ if (document.title === "Contacto") {
 
         if (!nombreER.test(nombreCompleto.value)) {
             valido = false;
-            nombreCompletoError.innerHTML = "Se permite entre 10 a 50 caracteres";
+            letraPorLetra("Se permite entre 10 a 50 caracteres", 20, nombreCompletoError);
         } else {
             nombreCompletoError.innerHTML = "";
         }
 
         if (!emailER.test(email.value)) {
             valido = false;
-            emailError.innerHTML = "No es correcto el formato de correo";
+            letraPorLetra("No es correcto el formato de correo", 20, emailError);
         } else {
             emailError.innerHTML = "";
         }
 
         if (!telefonoER.test(telefono.value)) {
             valido = false;
-            telefonoError.innerHTML = "formato solo numerico";
+            letraPorLetra("formato solo numerico", 20, telefonoError);
         } else {
             telefonoError.innerHTML = "";
         }
 
         if (!mensajeER.test(mensaje.value)) {
             valido = false;
-            mensajeError.innerHTML = "Se puede colocar entre 10 a 512 caracteres";
+            letraPorLetra("Se permite colocar entre 10 a 512 caracteres", 20, mensajeError);
         } else {
             mensajeError.innerHTML = "";
         }
@@ -251,6 +256,33 @@ if (document.title === "Contacto") {
 //---------------------------- FIN FORMULARIO ----------------------------------------
 
 //---------------------------- UTILITARIOS (USO GENERAL) -----------------------------
+
+//Funcion que toma un texto y reescribe letra por letra, según cantidad de milisegundos determinado
+function letraPorLetra(texto, tiempo, objeto) {
+
+    if (objeto.setInterval) {
+        clearInterval(objeto.setInterval);
+        objeto.setInterval = null;
+    }
+
+    if (objeto.innerHTML === texto) {
+        return;
+    }
+
+    let contador = 0;
+
+    let repetir = setInterval(completarTexto, tiempo);
+
+    function completarTexto() {
+        objeto.innerHTML += texto[contador];
+        contador++;
+        if(contador === texto.length) {
+            clearInterval(repetir);
+            repetir = null;
+        }
+    }
+
+}
 
 
 
