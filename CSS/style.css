@@ -181,6 +181,23 @@ puntos - botones
 
 /*-----------------  FORMULARIO  ---------------------------------*/
 
+.contactese {
+  font-family: 'Courier New', Courier, monospace;
+  animation: aparecer 1s;
+}
+
+@keyframes aparecer {
+
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+  
+}
+
 .formularioCentrado {
 
       display: flex;
@@ -419,6 +436,29 @@ puntos - botones
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
+.proyecto-distribucion {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+
+}
+
+.proyecto-distribucion > div {
+
+  width: 90vh;
+  padding: 1vh;
+  border: var(--color-Cuaternario) solid 2px;
+  margin: 1vh;
+}
+
+.distribucion-columnas {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
 
 
 /*--------------------FIN CUERPO INDEX-------------------------*/

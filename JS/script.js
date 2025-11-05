@@ -255,6 +255,17 @@ if (document.title === "Contacto") {
 
 //---------------------------- FIN FORMULARIO ----------------------------------------
 
+//---------------------------- PAGINA PROYECTOS --------------------------------------
+
+if (document.title === "Proyectos") {
+    let presentacion = document.getElementById("presentacion-proyectos");
+    letraPorLetra("Quienes somos detrás del código...", 40, presentacion);
+}
+
+
+
+//---------------------------- FIN PAGINA PROYECTOS ----------------------------------
+
 //---------------------------- UTILITARIOS (USO GENERAL) -----------------------------
 
 //Funcion que toma un texto y reescribe letra por letra, según cantidad de milisegundos determinado
@@ -281,8 +292,9 @@ function letraPorLetra(texto, tiempo, objeto) {
             repetir = null;
         }
     }
-
 }
+
+
 
 
 
