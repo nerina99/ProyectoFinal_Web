@@ -482,3 +482,86 @@ puntos - botones
 }
 
 /*--------------------FIN FOOTER-------------------------*/
+
+/*------------ SESION PORTAFOLIO--------------------------*/
+
+ /* --- */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      color: #222;
+      background-color: #f8f8f8;
+    }
+
+    h2, h3, h4 {
+      color: #333;
+      text-align: center;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+
+    ul {
+      list-style: disc;
+      margin-left: 40px;
+    }
+
+    .tech-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    .tech-list img {
+      display: block;
+      margin: 0 auto;
+      width: 120px;
+      height: 120px;
+      object-fit: contain;
+    }
+
+    .distribucion-columnas {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .distribucion-columnas div {
+      background: #fafafa;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    .contacto {
+      text-align: center;
+      padding: 20px;
+      background-color: #c06767;
+      color: white;
+    }
+
+    .contacto a {
+      color: #f4d03f;
+      text-decoration: none;
+    }
+
+    .portada {
+      display: block;
+      margin: 0 auto 30px auto;
+      border-radius: 12px;
+      width: 90%;
+      max-width: 800px;
+    }
+  
