@@ -15,22 +15,22 @@ if(document.title === "Presentación de Portafolio") {
 
     //Se rellena con los items que deseemos
     imagenes.push(new item(
-        "../Imagenes/Proyecto_Ian_1/Portafolio_1.png",
+        "/Imagenes/Proyecto_Ian_1/Portafolio_1.png",
         "Portafolio de Ian Programacion",
         " ... "));
 
     imagenes.push(new item(
-        "../Imagenes/Proyecto_Nerina_1/Portafolio_1.png",
+        "/Imagenes/Proyecto_Nerina_1/Portafolio_1.png",
         "Portafolio de Nerina Programacion",
         " ... "));
 
     imagenes.push(new item(
-        "../Imagenes/Proyecto_Nerina_1/Fidelidad Alta.png",
+        "/Imagenes/Proyecto_Nerina_1/Fidelidad Alta.png",
         "Boceto de los trabajos realizados",
         " ... "));
 
     imagenes.push(new item(
-        "../Imagenes/Proyecto_Ian_1/cod_1.png",
+        "/Imagenes/Proyecto_Ian_1/cod_1.png",
         "Código de trabajo",
         " ... "));
 
