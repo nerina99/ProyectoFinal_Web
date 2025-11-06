@@ -23,7 +23,7 @@
     <h2 id="presentacion-proyectos"></h2>
 
     <!--GESTOR DE CINE-->
-    <div id="#galeria-cine-proyecto">
+    <div id="galeria-cine-proyecto">
         <h2>Proyecto de realidad - CinemaCentro</h2>
 
         <img src="../Imagenes/Proyecto_Nerina_1/Vista_2.jpeg" alt="Vista 2" width="300" height="300">
@@ -132,6 +132,110 @@
       <li>Trabajar con repositorios colaborativos (Git).</li>
       <li>Planificar en equipo las distintas fases del desarrollo.</li>
     </ul>
+  </section>
+
+<!-- Seccion Gestor Tratamientos-->
+
+<h2 id="galeria-tratamientos-proyecto">Proyecto Tratamientos - SPA</h2>
+
+<section >
+    <div class="centrar">
+      <img src="../Imagenes/Proyecto_Ian_1/vista_1.png" alt="" width="45%">
+      <img src="../Imagenes/Proyecto_Ian_1/vista_2.png" alt="" width="45%">
+    </div>
+    <h3>Desafío propuesto</h3>
+    <p>
+      El desafío propuesto fue realizar un sistema completo de gestión de un spa, gestionando desde
+      los clientes que reservan sus sesiones
+       hasta el uso de las distintas instalaciones y disponibidad de turnos. 
+    </p>
+
+    <h3>Etapas del desarrollo</h3>
+    <ul>
+      <li>Diseño de la base de datos y conexión con MySQL.</li>
+      <li>Desarrollo de las clases principales con operaciones ABM y consultas SQL embebidas.</li>
+      <li>Implementación de la interfaz gráfica (GUI) con funcionalidades completas.</li>
+    </ul>
+
+    <h3>Requerimientos principales</h3>
+    <ul>
+      <li>Alta/Baja/Modificaciones de Clientes, Tratamientos, Consultorios, Instalaciones, y Masajistas.</li>
+      <li>Crear sesión en un consultorio o una instalación (reserva).</li>
+      <li>Listar un Dia de Spa completo con todas sus sesiones y horarios, consultorio o instalación que toca ir.</li>
+      <li>Listar los masajistas libres en una franja horaria. Ej. de 15 a 16hs. </li>
+      <li>Listar los masajistas según especialidad (facial, corporal, relajación, o estético).</li>
+      <li>Listar los tratamientos de acuerdo a su tipo (facial, corporal, relajación, o estético).</li>
+      <li>Listar las instalaciones libres en una franja horaria. Ej. de 14 a 16hs. </li>
+      <li>Asignar un masajista a una sesión de un tratamiento según especialidad y tipo (facial, corporal, relajación, o estético). </li>
+      <li>Listar las instalaciones más solicitadas entre fechas.</li>
+      <li>Modificar o Anular una sesión.</li>
+      <li>Listar los tratamientos más sesionados por los clientes.  </li>
+      <li>Generar un informe de los “días de spa” emitidos en una determinada fecha. </li>
+    </ul>
+
+    <h3>Desarrollo técnico</h3>
+    <div class="distribucion-columnas">
+      <div>
+        <h4>Base de datos</h4>
+        <p>
+          Creamos la estructura relacional en <b>MySQL</b>, definiendo las tablas y relaciones entre:
+          <i>Cliente</i>, <i>Dia_De_Spa</i>, <i>Masajista</i>, <i>Sesión</i>, <i>Instalación</i>, <i>Consultorio</i> y <i>Tratamiento</i>.
+        </p>
+      </div>
+      
+      <div>
+        <h4>Lógica en Java</h4>
+        <ul>
+          <li>Aplicación de principios de <b>POO</b> (abstracción, encapsulamiento, herencia).</li>
+          <li>Métodos ABM y consultas SQL embebidas.</li>
+          <li>Clase de conexión centralizada con la base de datos.</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Interfaz gráfica (GUI)</h4>
+        <ul>
+          <li>Diseñada en <b>Java Swing</b>, intuitiva y dinámica.</li>
+          <li>Permite gestionar las sesiones, pedir o retirarlos y sus distintos atributos.</li>
+          <li>Organización visual mediante paneles y pestañas interactivas.</li>
+        </ul>
+      </div>
+      
+      <div>
+        <h4>Funcionalidades destacadas</h4>
+        <ul>
+          <li>Gestión visual de turnos, pedido y actualización, ocupación y mayor demanda.</li>
+          <li>Listados dinámicos por cada atributo y sus propiedades.</li>
+          <li>Composición de nuevos tratamientos, adhesión de masajistas o instalaciones nuevas</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Tecnologías utilizadas</h3>
+    <div class="tech-list">
+      <img src="../Imagenes/Footer/1366_2000.webp" alt="Java">
+      <img src="../Imagenes/Footer/mysql.png" alt="MySQL">
+      <img src="../Imagenes/Footer/netb.png" alt="NetBeans">
+      <img src="../Imagenes/Footer/jdbc.png" alt="JDBC">
+      <img src="../Imagenes/Footer/git.png" alt="Git">
+    </div>
+
+    <h3>Trabajo en equipo</h3>
+    <ul>
+      <li>Diseño de base de datos</li>
+      <li>Desarrollo de clases</li>
+      <li>Conexión</li>
+      <li>Diseño visual y usabilidad</li>
+      <li>Testeo, actualización constante</li>
+    </ul>
+
+    <h3>Resultado</h3>
+    <p>
+      El resultado fue un producto que permite al usuario gestionar la base de datos de manera intuitiva e interactiva.
+      Además de brindar todas las herramientas de análisis de lo que se demande.
+    </p>
+
+
   </section>
 
   <!-- Sección Contacto -->
