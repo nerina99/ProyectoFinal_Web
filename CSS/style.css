@@ -74,6 +74,7 @@ Divs
     justify-content: center;
     height: 75vh;
     width: 100%;
+    position: relative;
 
 }
 
@@ -104,6 +105,38 @@ Divs
 /*
 Imagenes
 */
+.imagen-izquierda {
+
+  position:absolute;
+  top: 0;
+  left: 2vh;
+  transform: skew(5deg, 30deg);
+  animation: ingresarACIz 1s;
+}
+
+.imagen-izquierda img {
+  width: 30vh;
+  animation: ingresarACIz 1s;
+}
+
+@keyframes ingresarACIz {
+
+  0% {
+  position:absolute;
+  top: 0;
+  left: 2vh;
+  transform: skew(5deg, 30deg);
+  }
+  100% {
+    position: relative;
+    transform: skew(0, 0);
+    top: 0;
+    left: 0;
+    width: 100vh;
+  }
+  
+}
+
 .botonFlecha {
 
     height: 10vh;
@@ -143,7 +176,7 @@ puntos - botones
     font-size: 35vh;
     margin: 0;
     padding: 0;
-    color: violet;
+    color: var(--color-Secundario);
     transform: translateY(-130px);
     animation: aSeleccion;
     animation-duration: 1s;
@@ -169,7 +202,7 @@ puntos - botones
     color: black;
   }
   100% {
-    color: violet;
+    color: var(--color-Secundario);
   }
   
 }
