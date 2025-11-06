@@ -1,40 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyectos</title>
-    <link rel="stylesheet" href="../CSS/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyectos</title>
+  <link rel="stylesheet" href="../CSS/style.css">
 </head>
 <body>
-    <!-- Logo y Menu principal--->
-    <div class="encabezado">
-        <img src="../Imagenes/Logo.png" alt="Logo del portafolio" class="logo" width="150" height="150">
-        <nav>
-            <ul class="menu">
+  <!-- Logo y Menu principal -->
+  <div class="encabezado">
+    <img src="../Imagenes/Logo.png" alt="Logo del portafolio" class="logo" width="150" height="150">
+    <nav>
+      <ul class="menu">
+        <li><a href="./index.html">Home</a></li>
+        <li class="actual"><a href="#Proyecto">Proyecto</a></li>
+        <li><a href="./contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
 
-                <li ><a href="./index.html">Home</a></li>
-                <li class="actual"><a href="#Proyecto">Proyecto</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+  <h2 id="presentacion-proyectos"></h2>
+
+  <!-- GESTOR DE CINE -->
+  <section id="galeria-cine-proyecto">
+    <h2>Proyecto de realidad - CinemaCentro</h2>
+
+    <div class="centrar">
+      <img src="../Imagenes/Proyecto_Nerina_1/Vista_2.jpeg" alt="Vista 2" width="300" height="300">
+      <img src="../Imagenes/Proyecto_Nerina_1/Vista_3.jpeg" alt="Vista 3" width="300" height="300">
+      <img src="../Imagenes/Proyecto_Nerina_1/Vista_4.jpeg" alt="Vista 4" width="300" height="300">
+      <img src="../Imagenes/Proyecto_Nerina_1/Vista_1.jpeg" alt="Vista 1" width="300" height="300">
     </div>
 
-    <h2 id="presentacion-proyectos"></h2>
-
-    <!--GESTOR DE CINE-->
-    <div id="galeria-cine-proyecto">
-        <h2>Proyecto de realidad - CinemaCentro</h2>
-
-        <img src="../Imagenes/Proyecto_Nerina_1/Vista_2.jpeg" alt="Vista 2" width="300" height="300">
-        <img src="../Imagenes/Proyecto_Nerina_1/Vista_3.jpeg" alt="Vista 3" width="300" height="300">
-        <img src="../Imagenes/Proyecto_Nerina_1/Vista_4.jpeg" alt="Vista 4" width="300" height="300">
-        <img src="../Imagenes/Proyecto_Nerina_1/Vista_1.jpeg" alt="Vista 1" width="300" height="300">
- 
-  </header>
-
-  <section>
-  
     <h3>Desafío propuesto</h3>
     <p>
       El objetivo del proyecto fue diseñar y desarrollar una aplicación completa en 
@@ -134,20 +131,19 @@
     </ul>
   </section>
 
-<!-- Seccion Gestor Tratamientos-->
+  <!-- SECCIÓN GESTOR TRATAMIENTOS -->
+  <section id="galeria-tratamientos-proyecto">
+    <h2>Proyecto Tratamientos - SPA</h2>
 
-<h2 id="galeria-tratamientos-proyecto">Proyecto Tratamientos - SPA</h2>
-
-<section >
     <div class="centrar">
-      <img src="../Imagenes/Proyecto_Ian_1/vista_1.png" alt="" width="45%">
-      <img src="../Imagenes/Proyecto_Ian_1/vista_2.png" alt="" width="45%">
+      <img src="../Imagenes/Proyecto_Ian_1/vista_1.png" alt="Vista 1" width="45%">
+      <img src="../Imagenes/Proyecto_Ian_1/vista_2.png" alt="Vista 2" width="45%">
     </div>
+
     <h3>Desafío propuesto</h3>
     <p>
       El desafío propuesto fue realizar un sistema completo de gestión de un spa, gestionando desde
-      los clientes que reservan sus sesiones
-       hasta el uso de las distintas instalaciones y disponibidad de turnos. 
+      los clientes que reservan sus sesiones hasta el uso de las distintas instalaciones y disponibilidad de turnos. 
     </p>
 
     <h3>Etapas del desarrollo</h3>
@@ -161,16 +157,13 @@
     <ul>
       <li>Alta/Baja/Modificaciones de Clientes, Tratamientos, Consultorios, Instalaciones, y Masajistas.</li>
       <li>Crear sesión en un consultorio o una instalación (reserva).</li>
-      <li>Listar un Dia de Spa completo con todas sus sesiones y horarios, consultorio o instalación que toca ir.</li>
-      <li>Listar los masajistas libres en una franja horaria. Ej. de 15 a 16hs. </li>
-      <li>Listar los masajistas según especialidad (facial, corporal, relajación, o estético).</li>
-      <li>Listar los tratamientos de acuerdo a su tipo (facial, corporal, relajación, o estético).</li>
-      <li>Listar las instalaciones libres en una franja horaria. Ej. de 14 a 16hs. </li>
-      <li>Asignar un masajista a una sesión de un tratamiento según especialidad y tipo (facial, corporal, relajación, o estético). </li>
-      <li>Listar las instalaciones más solicitadas entre fechas.</li>
-      <li>Modificar o Anular una sesión.</li>
-      <li>Listar los tratamientos más sesionados por los clientes.  </li>
-      <li>Generar un informe de los “días de spa” emitidos en una determinada fecha. </li>
+      <li>Listar un Día de Spa completo con todas sus sesiones y horarios.</li>
+      <li>Listar masajistas libres en una franja horaria.</li>
+      <li>Listar los tratamientos según tipo (facial, corporal, relajación, estético).</li>
+      <li>Asignar masajista a sesión según especialidad.</li>
+      <li>Listar instalaciones más solicitadas.</li>
+      <li>Modificar o anular una sesión.</li>
+      <li>Generar informe de días de spa emitidos.</li>
     </ul>
 
     <h3>Desarrollo técnico</h3>
@@ -179,16 +172,16 @@
         <h4>Base de datos</h4>
         <p>
           Creamos la estructura relacional en <b>MySQL</b>, definiendo las tablas y relaciones entre:
-          <i>Cliente</i>, <i>Dia_De_Spa</i>, <i>Masajista</i>, <i>Sesión</i>, <i>Instalación</i>, <i>Consultorio</i> y <i>Tratamiento</i>.
+          <i>Cliente</i>, <i>Día_De_Spa</i>, <i>Masajista</i>, <i>Sesión</i>, <i>Instalación</i>, <i>Consultorio</i> y <i>Tratamiento</i>.
         </p>
       </div>
       
       <div>
         <h4>Lógica en Java</h4>
         <ul>
-          <li>Aplicación de principios de <b>POO</b> (abstracción, encapsulamiento, herencia).</li>
+          <li>Aplicación de principios de <b>POO</b>.</li>
           <li>Métodos ABM y consultas SQL embebidas.</li>
-          <li>Clase de conexión centralizada con la base de datos.</li>
+          <li>Clase de conexión centralizada.</li>
         </ul>
       </div>
 
@@ -196,17 +189,17 @@
         <h4>Interfaz gráfica (GUI)</h4>
         <ul>
           <li>Diseñada en <b>Java Swing</b>, intuitiva y dinámica.</li>
-          <li>Permite gestionar las sesiones, pedir o retirarlos y sus distintos atributos.</li>
-          <li>Organización visual mediante paneles y pestañas interactivas.</li>
+          <li>Permite gestionar sesiones y atributos.</li>
+          <li>Organización visual con paneles y pestañas.</li>
         </ul>
       </div>
       
       <div>
         <h4>Funcionalidades destacadas</h4>
         <ul>
-          <li>Gestión visual de turnos, pedido y actualización, ocupación y mayor demanda.</li>
-          <li>Listados dinámicos por cada atributo y sus propiedades.</li>
-          <li>Composición de nuevos tratamientos, adhesión de masajistas o instalaciones nuevas</li>
+          <li>Gestión visual de turnos y ocupación.</li>
+          <li>Listados dinámicos por atributo.</li>
+          <li>Composición de nuevos tratamientos.</li>
         </ul>
       </div>
     </div>
@@ -226,19 +219,115 @@
       <li>Desarrollo de clases</li>
       <li>Conexión</li>
       <li>Diseño visual y usabilidad</li>
-      <li>Testeo, actualización constante</li>
+      <li>Testeo y actualización constante</li>
     </ul>
 
     <h3>Resultado</h3>
     <p>
-      El resultado fue un producto que permite al usuario gestionar la base de datos de manera intuitiva e interactiva.
-      Además de brindar todas las herramientas de análisis de lo que se demande.
+      El resultado fue un producto que permite al usuario gestionar la base de datos de manera intuitiva e interactiva, 
+      brindando herramientas de análisis de demanda.
     </p>
-
-
   </section>
 
-  <!-- Sección Contacto -->
+  <!-- PROYECTO GYM -->
+  <section id="galeria-prototipos-proyecto">
+    <h2>Proyecto Gym - SPA</h2>
+    <p>
+      El proyecto consistió en el desarrollo de un prototipo de producto digital orientado al ámbito fitness, 
+      diseñado bajo una metodología centrada en el usuario. 
+      La propuesta fue crear una aplicación móvil nativa (Android/iOS) que ayude a las personas 
+      a organizar sus rutinas de entrenamiento, controlar su progreso y mantener la motivación diaria.
+    </p>
+
+    <h3>Objetivos del proyecto</h3>
+    <ul>
+      <li>Validar el prototipo mediante testeo con usuarios reales.</li>
+      <li>Diseñar una interfaz (UI) aplicando principios de diseño visual y accesibilidad.</li>
+      <li>Incorporar movimiento e interacción siguiendo los principios de motion design.</li>
+      <li>Desarrollar una presentación profesional del proyecto para el portafolio.</li>
+    </ul>
+
+    <h3>Metodología de trabajo</h3>
+    <h4>1. Investigación y definición</h4>
+    <p>
+      Se realizaron entrevistas con usuarios para identificar necesidades reales y oportunidades de mejora. 
+      A partir de los hallazgos, se definió el MVP y el POV centrados en simplicidad y funcionalidad.
+    </p>
+
+    <h4>2. Arquitectura y flujo de usuario</h4>
+    <p>
+      Se diseñó el user flow con el recorrido principal: inicio de sesión, elección de rutina, seguimiento de progreso y notificaciones.
+      Se creó la arquitectura de información priorizando claridad y accesibilidad.
+    </p>
+
+    <h4>3. Wireframes y evolución visual</h4>
+    <p>
+      El proyecto avanzó desde wireframes de baja fidelidad en papel y Figma hacia versiones de alta fidelidad 
+      con contenidos reales, tipografía, colores y componentes del UI Kit.
+    </p>
+
+    <h4>4. Prototipo funcional</h4>
+    <p>
+      Se desarrolló un prototipo interactivo en Figma, incluyendo animaciones, transiciones y microinteracciones 
+      que permiten simular el recorrido completo de la aplicación.
+    </p>
+
+    <h3>Principales características del prototipo</h3>
+    <ul>
+      <li>Inicio personalizado con registro y selección de objetivos.</li>
+      <li>Rutinas adaptadas al nivel y tiempo disponible.</li>
+      <li>Seguimiento mediante estadísticas visuales.</li>
+      <li>Recordatorios y notificaciones motivacionales.</li>
+      <li>Modo oscuro y diseño accesible.</li>
+    </ul>
+
+    <h3>Diseño visual y UI Kit</h3>
+    <p>
+      Sistema visual coherente con colores negro, gris oscuro y verde. 
+      Tipografía sans-serif legible, botones e íconos con jerarquía clara.
+    </p>
+    <ul>
+      <li>Tipografía moderna sans-serif.</li>
+      <li>Componentes reutilizables y consistentes.</li>
+      <li>Aplicación de leyes UX: proximidad, contraste y consistencia.</li>
+    </ul>
+
+    <h3>Validación UX</h3>
+    <ul>
+      <li>Entrevistas cualitativas.</li>
+      <li>Pruebas de usabilidad.</li>
+      <li>Evaluación heurística de Nielsen.</li>
+      <li>Card sorting para validar navegación.</li>
+    </ul>
+
+    <p>
+      Los resultados permitieron optimizar el flujo, mejorar menús y simplificar el acceso a funciones principales.
+    </p>
+
+    <h3>Elevator Pitch</h3>
+    <p>
+      “GymFit App es tu entrenador personal digital. Diseñada para adaptarse a tu ritmo, metas y motivación, 
+      te ayuda a crear hábitos saludables y mantener constancia desde tu teléfono.”
+    </p>
+
+    <h3>Resultado final</h3>
+    <p>
+      El proyecto culminó con un prototipo de alta fidelidad completamente funcional, combinando diseño atractivo, 
+      accesibilidad y microinteracciones. 
+      Se logró una app intuitiva, estética y centrada en el usuario.
+    </p>
+
+    <h3>Aprendizajes y conclusiones</h3>
+    <ul>
+      <li>Validar cada decisión con usuarios reales.</li>
+      <li>Equilibrar estética y funcionalidad.</li>
+      <li>Aplicar guías de estilo y sistemas de diseño.</li>
+      <li>Usar microinteracciones para enriquecer la experiencia.</li>
+      <li>Presentar el proceso de diseño de forma clara y profesional.</li>
+    </ul>
+  </section>
+
+  <!-- CONTACTO -->
   <section class="contacto" id="Contacto">
     <h2>Contacto</h2>
     <p>© 2025 Portafolio de Nerina e Ian — Todos los derechos reservados</p>
