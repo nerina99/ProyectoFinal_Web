@@ -460,6 +460,15 @@ puntos - botones
   justify-content: center;
 }
 
+.centrar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centrar img {
+  padding: 1vh;
+}
 
 /*--------------------FIN CUERPO INDEX-------------------------*/
 
