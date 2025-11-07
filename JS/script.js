@@ -140,7 +140,7 @@ if(document.title === "Presentación de Portafolio") {
 
 if (document.title === "Contacto") {
 
-
+    let usoSolaVez = false;
 
     const formulario = document.getElementById("formulario");
 
@@ -189,7 +189,7 @@ if (document.title === "Contacto") {
 
         if (!telefonoER.test(telefono.value)) {
             valido = false;
-            letraPorLetra("formato solo numerico", 20, telefonoError);
+            letraPorLetra("formato solo numerico, colocar entre 6 a 13 digitos", 20, telefonoError);
         } else {
             telefonoError.innerHTML = "";
         }
@@ -204,7 +204,7 @@ if (document.title === "Contacto") {
         if (!valido) {
             evento.preventDefault();
             return null;
-        } else {
+        } else if(!usoSolaVez) {
             evento.preventDefault();
             const informacion = {
                 nombreCompleto: nombreCompleto.value,
@@ -217,7 +217,16 @@ if (document.title === "Contacto") {
 
             crearCuadroDatos(informacion);
 
+            usoSolaVez = true;
+            nombreCompleto.value = "";
+            email.value = "";
+            telefono.value = "";
+            mensaje.value = "";
 
+
+        } else {
+            evento.preventDefault();
+            crearCuadroDatosERROR();
         }
 
     });
@@ -239,6 +248,29 @@ if (document.title === "Contacto") {
         <p><b>Email:</b> ${datos.email}</p>
         <p><b>Teléfono:</b> ${datos.telefono}</p>
         <p><b>Mensaje:</b> ${datos.mensaje}</p>
+        `;
+        document.getElementById("seccionFormulario").appendChild(datosIngresados);
+    }
+
+    function crearCuadroDatosERROR() {
+
+        const div = document.querySelector('.cuadroDatos');
+
+        if (div) {
+            div.remove();
+        }
+
+        const divERROR = document.querySelector('.cuadroDatosERROR');
+
+        if (divERROR) {
+            divERROR.remove();
+        }
+
+        const datosIngresados = document.createElement("div");
+        datosIngresados.className = "cuadroDatosERROR";
+        datosIngresados.innerHTML = 
+        `
+        <p><b>NO SE PUEDE ENVIAR LA INFORMACION NUEVAMENTE DEL FORMULARIO, RECARGUE LA PAGINA</b></p>
         `;
         document.getElementById("seccionFormulario").appendChild(datosIngresados);
     }
